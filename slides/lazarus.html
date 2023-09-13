@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="../dist/reset.css">
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+	</head>
+
+  <style>
+    
+    .table{
+      background-color: hsl(0, 0%, 57%);
+      color: white;
+    }
+    .table__head {
+      background-color: hsl(0, 0%, 47%);
+      
+    }
+
+    .th {
+      color: white;
+    }
+
+    .th--pro {
+      background-color: hsl(140, 88%, 62%);
+    }
+    .th--con {
+      background-color: hsl(2, 72%, 56%);
+    }
+  </style>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+        <section>
+          <h2>Lazarus IDE</h2>
+        </section>
+
+        <section data-auto-animate>
+          <h2>Temas</h2>
+          <ul>
+            <li>Qué es?</li>
+            <li>Historia</li>
+            <li>tipo de programación</li>
+            <li>ventajas y desventajas</li>
+            <li>Sintaxis</li>
+            <li>Instalación</li>
+            <li>Conclusiones</li>
+          </ul>
+        </section>
+
+        <section data-transition="convex">
+          <h3>¿Qué es?</h3>
+          <p>
+            Lazarus es un IDE de codigo abierto utilizado principalmente en la programación de Object pascal, siendo una alternativa de código abierto para <b>Delphi.</b> 
+          </p>
+
+        </section>
+
+        <section data-transition="convex">
+          <h3>Historia</h3>
+          <p>El proyecto lazarus fue fundado por: </p>
+          <ul>
+            <li>Cliff Baesman</li>
+            <li>Shane Miller</li>
+            <li>Michael A. Hess</li>
+          </ul>
+          
+          <p>
+            Formaron parte del proyecto disuelto Megido <b>(clon de Delphi).</b> Decidieron juntarse y formar el proyecto Lazarus, <b>Qué es mantenido por desarrolladores colaboradores</b>
+          </p>
+
+        </section>
+
+        <section data-transition="convex">
+          <h3>Tipo de programación</h3>
+          <p>
+            Lazarus usa <b>Object Pascal (Free pascal),</b> qué es una extensión del Pascal original.
+          </p>
+          <p>
+            Incluye características del paradigma de <b>programación orientada a objetos.</b>
+          </p>
+
+        </section>
+
+        <section data-transition="convex">
+            <h3>Ventajas y Desventajas de Lazarus</h3>
+
+            <table class="table">
+
+              <thead>
+                <th class="th th--pro">Ventajas</th>
+                <th class="th th--con">Desventajas</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td >
+                    puede ser modificable y expandible.
+                  </td>
+                  <td >
+                    No compatible con proyectos de Delphi.
+                  </td>
+                </tr>
+                <tr>
+                  <td >
+                    Distribución libre de pagos
+                  </td>
+                  <td >
+                    Encontrar documentación.
+                  </td>
+                </tr>
+              </tbody>
+
+            </table>
+        </section>
+
+        <section>
+          <h4>Sintaxis</h4>
+
+          <table class="table">
+            <thead class="table__head">
+              <th class="th" style="text-align: center;">Operadores Lógicos</th>
+              <th class="th" style="text-align: center;">Operadores Aritméticos</th>
+              <th class="th" style="text-align: center;">Operadores Relacionales</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: center;">and</td>
+                <td style="text-align: center;"> + </td>
+                <td style="text-align: center;"> = </td>
+              </tr>
+              <tr>
+                <td style="text-align: center;"> or </td>
+                <td style="text-align: center;"> - </td>
+                <td style="text-align: center;"> < > </td>
+              </tr>
+              <tr>
+                <td style="text-align: center;"> not </td>
+                <td style="text-align: center;"> * </td>
+                <td style="text-align: center;"> < y > </td>
+              </tr>
+
+              <tr>
+                <td style="text-align: center;"> xor </td>
+                <td style="text-align: center;"> / </td>
+                <td style="text-align: center;"> <= y >= </td>
+              </tr>
+
+              <tr>
+                <td style="text-align: center;"> </td>
+                <td style="text-align: center;"> div y mod </td>
+                <td style="text-align: center;">  </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </section>
+
+        <section>
+          <h3>Orden De Prioridad</h3>
+
+          <table class="table">
+            <thead>
+              <th class="th table__head"></th>
+              <th class="th">operador</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="table__head">1.</td>
+                <td>not, @</td>
+              </tr>
+              <tr>
+                <td class="table__head">2.</td>
+                <td>adn, *, /, div, mod</td>
+              </tr>
+              <tr>
+                <td class="table__head">3.</td>
+                <td> or, xor, +, - </td>
+              </tr>
+
+              <tr>
+                <td class="table__head">4.</td>
+                <td> =, <, ≤,  >. ≥, <>, in </td>
+              </tr>
+            </tbody>
+
+          </table>
+
+        </section>
+
+        <section data-auto-animate>
+          <h3>Condicionales</h3>
+          <h4>If</h4>
+
+          <pre>
+            <code data-trim data-noescape>
+              if true then
+                // ejecuta esta instrucción
+              else
+                // ejecuta instrucción por defecto
+            </code>
+
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <h3>Condicionales</h3>
+          <h4>If</h4>
+
+          <pre>
+            <code data-trim data-noescape>
+              if true then
+                begin
+                // instrucción 1
+                // instrucción 2
+                // instrucción 3
+                end
+              else
+                // ejecuta instrucción por defecto
+            </code>
+
+          </pre>
+        </section>
+
+        <section data-auto-animate>
+          <h3>Condicionales</h3>
+          <h4>Case (switch)</h4>
+          <pre>
+            <code data-trim data-noescape>
+              case expresión of:
+                value1: // código
+                value2: // código
+                valueN: // más código ...
+              else
+                // Si ninguna de las condiciones funciona
+              end;
+            </code>
+          </pre>
+        </section>
+        
+        <section data-auto-animate>
+          <h3>Bucles</h3>
+          <pre>
+            <code data-trim data-noescape>
+              for contador=:valorInicial to valorfinal do
+              begin
+                // conjunto de instrucciones
+              end;
+              
+              for contador := valorInicial downto valorFinal do
+              begin
+                // conjunto de instrucciones
+              end;              
+            </code>
+          </pre>
+        </section>
+
+        <section data-auto-animate>
+          <h3>Bucles</h3>
+          <pre>
+            <code data-trim data-noescape>
+              while condicion do
+              begin
+                // conjunto de instrucciones
+              end;
+            </code>
+          </pre>
+        </section>
+
+        <section data-auto-animate>
+          <h3>Bucles</h3>
+          <pre>
+            <code data-trim data-noescape>
+              repeat
+              // code...
+              until condition
+            </code>
+          </pre>
+        </section>
+
+        <section data-transition="convex">
+          <h3>Instrucciones de control en bucles</h3>
+          <ul>
+            <li>continue: no se ejecuta el resto de las sentencias del bucle, transfiriendo el control a la primera instrucción (previa comprobación de la condición)</li>
+            <li>Break: finaliza la ejecución del bucle</li>
+          </ul>
+        </section>
+        
+
+        <section data-auto-animate="convex">
+          <h3>Instalación</h3>
+        </section>
+
+        <section data-background-iframe="https://www.lazarus-ide.org">
+        </section>
+
+        <section data-transition="concave">
+          <h1>Gracias por su atención 😘</h1>
+        </section>
+        <!-- <section>
+          <iframe data-src="https://www.lazarus-ide.org/" data-preload></iframe>
+          <iframe data-src="https://hakim.se" style='height:100vh; width:100vh' data-preload></iframe>
+        </section> -->
+
+        <section>
+
+          <h3>Conclusiones</h3>
+          <ul>
+            <li>
+              Lazarus IDE es un entorno de desarrollo integrado gratuito y de código abierto que permite crear aplicaciones nativas y multiplataforma con el lenguaje Pascal.
+            </li>
+            <li>
+              Con Lazarus IDE se pueden utilizar diversos componentes y un diseñador gráfico de formularios para crear interfaces de usuario complejas y atractivas.
+            </li>
+          </ul>
+        </section>
+			</div>
+
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+		<script src="../plugin/zoom/zoom.js"></script>
+		<script src="../plugin/notes/notes.js"></script>
+		<script src="../plugin/search/search.js"></script>
+		<script src="../plugin/markdown/markdown.js"></script>
+		<script src="../plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+
+	</body>
+</html>
