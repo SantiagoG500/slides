@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Lazarus expo</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -16,7 +16,7 @@
 
 		<link rel="stylesheet" href="../dist/reset.css">
 		<link rel="stylesheet" href="../dist/reveal.css">
-		<link rel="stylesheet" href="../dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="../dist/theme/dracula.css" id="theme">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="../plugin/highlight/monokai.css">
@@ -38,7 +38,7 @@
     }
 
     .th--pro {
-      background-color: hsl(140, 88%, 62%);
+      background-color: hsl(140, 72%, 56%);
     }
     .th--con {
       background-color: hsl(2, 72%, 56%);
@@ -52,54 +52,60 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
         <section>
-          <h2>Lazarus IDE</h2>
+          <h1>Lazarus IDE</h1>
         </section>
 
-        <section data-auto-animate>
+        <section data-transition="convex">
           <h2>Temas</h2>
           <ul>
             <li>Qué es?</li>
-            <li>Historia</li>
-            <li>tipo de programación</li>
-            <li>ventajas y desventajas</li>
-            <li>Sintaxis</li>
-            <li>Instalación</li>
-            <li>Conclusiones</li>
-          </ul>
+              <li>Historia</li>
+              <li>tipo de programación</li>
+              <li>ventajas y desventajas</li>
+              <li>Sintaxis</li>
+              <li>Instalación</li>
+              <li>Conclusiones</li>
+            </ul>
         </section>
-
-        <section data-transition="convex">
-          <h3>¿Qué es?</h3>
-          <p>
-            Lazarus es un IDE de codigo abierto utilizado principalmente en la programación de Object pascal, siendo una alternativa de código abierto para <b>Delphi.</b> 
-          </p>
-
-        </section>
-
-        <section data-transition="convex">
-          <h3>Historia</h3>
-          <p>El proyecto lazarus fue fundado por: </p>
-          <ul>
-            <li>Cliff Baesman</li>
-            <li>Shane Miller</li>
-            <li>Michael A. Hess</li>
-          </ul>
           
-          <p>
-            Formaron parte del proyecto disuelto Megido <b>(clon de Delphi).</b> Decidieron juntarse y formar el proyecto Lazarus, <b>Qué es mantenido por desarrolladores colaboradores</b>
-          </p>
+          <section data-transition="concave" data-background-image="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGQzbThidmlnNXQ0bm00Nndva3Z3YjRzaDRzaDg0N28wMm8zeGhrNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iGpHt2H22k1orjgT9b/giphy.gif">
+            <div style="background-color: hsla(50, 7%, 36%, 0.8);padding:1em;">
+              <h3>¿Qué es?</h3>
+              <p>
+                Lazarus es un IDE de codigo abierto utilizado principalmente en la programación de Object pascal, siendo una alternativa de código abierto para <b>Delphi.</b> 
+              </p>
+            </div>
+            
+          </section>
 
+        <section data-transition="convex" data-background-image="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXd1a2V1enNuZHdhZGVlbHZ5OXA4bTNmc3FhMGNsajRtb3M4OGJpYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oYQ9HRm5Mo7VXeMNVR/giphy.gif">
+          <div style="background-color: hsla(0, 1%, 37%, 0.502);padding: 1em;">
+            <h3>Historia</h3>
+            <p>El proyecto lazarus fue fundado por: </p>
+            <ul>
+              <li>Cliff Baesman</li>
+              <li>Shane Miller</li>
+              <li>Michael A. Hess</li>
+            </ul>
+            <p>
+              Formaron parte del proyecto disuelto Megido <b>(clon de Delphi).</b> Decidieron juntarse y formar el proyecto Lazarus, <b>Qué es mantenido por desarrolladores colaboradores</b>
+            </p>
+          </div>
+          
+          
         </section>
-
-        <section data-transition="convex">
-          <h3>Tipo de programación</h3>
-          <p>
-            Lazarus usa <b>Object Pascal (Free pascal),</b> qué es una extensión del Pascal original.
-          </p>
-          <p>
-            Incluye características del paradigma de <b>programación orientada a objetos.</b>
-          </p>
-
+        
+        <section data-transition="concave" data-background-image="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWFtbndnZnZheTYxem0yempma3g3azVnZndmYW05c3U5bDd1ZWdzdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MGaacoiAlAti0/giphy.gif">
+          <div style="background-color: hsla(0, 0%, 0%, 0.502);padding: 1em;">
+            <h3>Tipo de programación</h3>
+            <p>
+              Lazarus usa <b>Object Pascal (Free pascal),</b> qué es una extensión del Pascal original.
+            </p>
+            <p>
+              Incluye características del paradigma de <b>programación orientada a objetos.</b>
+            </p>
+          </div>
+            
         </section>
 
         <section data-transition="convex">
@@ -133,7 +139,7 @@
             </table>
         </section>
 
-        <section>
+        <section data-transition="concave">
           <h4>Sintaxis</h4>
 
           <table class="table">
@@ -314,8 +320,10 @@
         <section data-background-iframe="https://www.lazarus-ide.org">
         </section>
 
-        <section data-transition="concave">
-          <h1>Gracias por su atención 😘</h1>
+        <section data-transition="concave" data-background-image="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHIycWxidGh0eTlyeGRneGV5cXl2MDB4azNqdWhnODczY3BpOTN5cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KE0otq5Wpr7TM2yRCd/giphy.gif">
+          <div style="background-color: hsla(0, 0%, 0%, 0.502);padding: 1em;">
+            <h1>Gracias por su atención 🫶</h1>
+          </div>
         </section>
         <!-- <section>
           <iframe data-src="https://www.lazarus-ide.org/" data-preload></iframe>
